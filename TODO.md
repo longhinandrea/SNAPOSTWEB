@@ -54,7 +54,11 @@ Regole di lavoro (per l'omologo):
     l'utente prendera' il dominio. Stesso indirizzo andrà nel Play Store
 [ ] Sezione contatti affidabile: sostituire il mailto con un form
     o servizio esterno
-[ ] Pubblicazione GitHub Pages: attivare Pages sul repo (zero costi)
+[x] 27/09 sera Pubblicazione GitHub Pages ATTIVA: sito online su
+    https://longhinandrea.github.io/SNAPOSTWEB/ (repo reso pubblico,
+    branch main / root). Verificate online tutte e 4 le pagine:
+    index, android, windows, privacy. Ogni commit+push aggiorna il
+    sito in automatico entro ~1 minuto
 [ ] Dominio (snapost.it o alternativa ~10-15 EUR/anno) collegato
     come custom domain a GitHub Pages
 [ ] Link reali: Play Store e installer Windows quando disponibili
