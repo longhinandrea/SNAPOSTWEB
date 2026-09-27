@@ -36,6 +36,11 @@ Regole di lavoro (per l'omologo):
 [x] 27/09 Sito responsive (menu mobile) e accessibilita' di base
     (aria, prefers-reduced-motion)
 [x] 27/09 Repo GitHub creato e prima pubblicazione
+[x] 27/09 sera Pagina privacy (privacy.html): 8 sezioni in card stile
+    sito, messaggio "le tue foto restano tue" (locale, niente cloud,
+    niente account, niente pubblicita'), permessi motivati, diritti
+    GDPR, nota hosting sito. Link del footer gia' attivo su tutte
+    le pagine. Da rileggere dall'utente prima del Play Store
 
 ## DA FARE
 [ ] Screenshot reali delle 2 app (li fornisce l'utente): sostituire
@@ -44,8 +49,9 @@ Regole di lavoro (per l'omologo):
     (5 s creazione tag in Windows) e riempire gli slot video delle
     schede app. Estendere il bottone "Demo" SOLO alle card che
     avranno davvero un contenuto
-[ ] Pagina privacy (privacy.html): OBBLIGATORIA per il Play Store,
-    il link esiste gia' nel footer ma la pagina non c'e'
+[ ] Email definitiva di contatto: in privacy.html e index.html si usa
+    info@snapost.it (provvisoria): da confermare/aggiornare quando
+    l'utente prendera' il dominio. Stesso indirizzo andrà nel Play Store
 [ ] Sezione contatti affidabile: sostituire il mailto con un form
     o servizio esterno
 [ ] Pubblicazione GitHub Pages: attivare Pages sul repo (zero costi)
