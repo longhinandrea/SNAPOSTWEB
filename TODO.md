@@ -43,11 +43,9 @@ Regole di lavoro (per l'omologo):
     le pagine. Da rileggere dall'utente prima del Play Store
 
 ## DA FARE
-[~] Screenshot reali: le 5 schermate Windows fornite il 29/09 sono
-    integrate nella pagina windows.html (posta in arrivo, dettaglio foto,
-    tag, storico e trasferimenti; clic per ingrandire). In attesa dello
-    screenshot della NOTA ALLA FOTO (slot gia' pronto in galleria).
-    Restano da inserire gli screenshot Android (formato telefono 9:17)
+[~] Screenshot reali: Windows (6 schermate: posta in arrivo, dettaglio,
+    tag, storico, trasferimenti, nota visualizzata in Esplora file).
+    Inserita l'immagine note; restano gli screenshot Android (9:17)
 [ ] Video dimostrativi: sostituire il dialog demo con video reale
     (5 s creazione tag in Windows) e riempire gli slot video delle
     schede app. Estendere il bottone "Demo" SOLO alle card che
