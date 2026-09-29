@@ -43,9 +43,9 @@ Regole di lavoro (per l'omologo):
     le pagine. Da rileggere dall'utente prima del Play Store
 
 ## DA FARE
-[~] Screenshot reali: Windows (6 schermate: posta in arrivo, dettaglio,
-    tag, storico, trasferimenti, nota visualizzata in Esplora file).
-    Inserita l'immagine note; restano gli screenshot Android (9:17)
+[~] Screenshot reali: Windows (7 schermate: posta in arrivo, dettaglio,
+    tag, creazione tag/galleria icone, storico, trasferimenti e nota in
+    Esplora file). Restano gli screenshot Android (9:17)
 [ ] Video dimostrativi: sostituire il dialog demo con video reale
     (5 s creazione tag in Windows) e riempire gli slot video delle
     schede app. Estendere il bottone "Demo" SOLO alle card che
