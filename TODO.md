@@ -68,12 +68,12 @@ Regole di lavoro (per l'omologo):
     a una r): e' snapost.it, verificato piu' volte
 [x] 29/09 mattina Footer: firma "Software by L.A. VE" su tutte le
     4 pagine (l'utente NON vuole il nome completo, per ora)
-[ ] Attivare ENFORCE HTTPS su GitHub (Settings > Pages > spunta):
-    ora http://www.snapost.it risponde ancora senza reindirizzare al
-    lucchetto
-[ ] Creare casella info@snapost.it nel pannello email Aruba
-    (admin.aruba.it > Email): i record MX sono gia' attivi, basta
-    creare la casella con password
+[x] 29/09 mattina ENFORCE HTTPS attivato su GitHub Pages: http
+    reindirizza ora sempre a https (lucchetto forzato)
+[x] 29/09 mattina Casella info@snapost.it creata nel pannello email
+    Aruba (postmaster@ gia' esistente, tecnica, non toccare).
+    Webmail: webmail.aruba.it. MX erano gia' attivi. Da testare
+    invio+ricezione con email di prova
 [ ] Link reali: Play Store e installer Windows quando disponibili
     (oggi le card download puntano alle schede app)
 
