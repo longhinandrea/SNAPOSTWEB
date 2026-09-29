@@ -52,10 +52,13 @@ Regole di lavoro (per l'omologo):
 [x] 29/09 sera Email definitiva: info@snapost.it (casella Aruba attiva e
     testata). Usata nel form contatti e in privacy.html; stesso indirizzo
     andra' nel Play Store
-[~] 29/09 sera Sezione contatti: vero form (nome, email, messaggio),
-    stile sito, honeypot antispam, invio senza ricaricare la pagina tramite
-    Formspree (free, 50 invii/mese). Endpoint inserito; resta da pubblicare
-    e testare un invio reale sulla casella info@snapost.it
+[x] 29/09 sera Sezione contatti COMPLETA E VERIFICATA: vero form
+    (nome, email, messaggio) stile sito, honeypot antispam, invio senza
+    ricaricare la pagina tramite Formspree (free, 50 invii/mese).
+    Endpoint mppwbywd attivo; test reale fatto dall'utente: email
+    ricevuta su info@snapost.it. Voce "Contatti" aggiunta al menu
+    superiore su tutte e 4 le pagine (nelle pagine interne porta a
+    index.html#contatti)
 [x] 27/09 sera Pubblicazione GitHub Pages ATTIVA: sito online su
     https://longhinandrea.github.io/SNAPOSTWEB/ (repo reso pubblico,
     branch main / root). Verificate online tutte e 4 le pagine:
