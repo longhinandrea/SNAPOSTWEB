@@ -59,8 +59,21 @@ Regole di lavoro (per l'omologo):
     branch main / root). Verificate online tutte e 4 le pagine:
     index, android, windows, privacy. Ogni commit+push aggiorna il
     sito in automatico entro ~1 minuto
-[ ] Dominio (snapost.it o alternativa ~10-15 EUR/anno) collegato
-    come custom domain a GitHub Pages
+[x] 29/09 mattina Dominio www.snapost.it COLLEGATO a GitHub Pages:
+    acquistato su Aruba (dominio+email), 4 record A + CNAME www
+    impostati nel pannello DNS Aruba, file CNAME nel repo, certificato
+    HTTPS emesso da GitHub. https://snapost.it reindirizza a
+    https://www.snapost.it. NOTA: nel pannello DNS Aruba il dominio
+    puo' SEMBRARE "snapor.it" per via del font (la t finale somiglia
+    a una r): e' snapost.it, verificato piu' volte
+[x] 29/09 mattina Footer: firma "Software by L.A. VE" su tutte le
+    4 pagine (l'utente NON vuole il nome completo, per ora)
+[ ] Attivare ENFORCE HTTPS su GitHub (Settings > Pages > spunta):
+    ora http://www.snapost.it risponde ancora senza reindirizzare al
+    lucchetto
+[ ] Creare casella info@snapost.it nel pannello email Aruba
+    (admin.aruba.it > Email): i record MX sono gia' attivi, basta
+    creare la casella con password
 [ ] Link reali: Play Store e installer Windows quando disponibili
     (oggi le card download puntano alle schede app)
 
