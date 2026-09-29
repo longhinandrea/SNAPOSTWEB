@@ -22,6 +22,19 @@
 .faq{background:#f7faff}.faq-list{max-width:780px;margin:auto;display:grid;gap:10px}.faq-item{border:1px solid var(--line);background:white;border-radius:14px;padding:0 18px}.faq-item summary{cursor:pointer;list-style:none;font-weight:700;padding:17px 28px 17px 0;position:relative}.faq-item summary::-webkit-details-marker{display:none}.faq-item summary:after{content:"+";position:absolute;right:0;color:var(--blue);font-size:20px;top:12px}.faq-item[open] summary:after{content:"−"}.faq-item p{color:var(--muted);font-size:14px;margin:0;padding:0 0 17px}
 /* ---- CTA finale ---- */
 .final-cta{padding:79px 0;text-align:center;background:white}.final-box{border-radius:28px;padding:48px 30px;background:linear-gradient(125deg,#edf4ff,#f8fbff);border:1px solid var(--line)}.final-box h2{margin:0 0 12px;font-size:clamp(29px,4vw,42px)}.final-box p{color:var(--muted);margin:0 auto 18px;max-width:620px}.contact-email{margin-bottom:22px}.contact-email-label{display:block;color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px}.contact-email a{color:var(--navy);font-weight:750;font-size:19px;text-decoration:underline;text-decoration-color:var(--blue);text-decoration-thickness:2px;text-underline-offset:4px}.contact-email a:hover{color:var(--blue)}
+/* ---- form contatti (Formspree) ---- */
+.contact-mail-inline{color:var(--navy);font-weight:750;text-decoration:underline;text-decoration-color:var(--azure);text-decoration-thickness:2px;text-underline-offset:3px}.contact-mail-inline:hover{color:var(--blue)}
+.contact-form{max-width:540px;margin:6px auto 0;display:grid;gap:12px;text-align:left}
+.contact-form input,.contact-form textarea{width:100%;border:1px solid #c9d8ef;border-radius:12px;padding:13px 15px;font:inherit;font-size:15px;color:var(--ink);background:#fff;transition:border-color .2s,box-shadow .2s}
+.contact-form input::placeholder,.contact-form textarea::placeholder{color:#93a2ba}
+.contact-form input:focus,.contact-form textarea:focus{outline:none;border-color:var(--azure);box-shadow:0 0 0 3px rgba(31,125,255,.14)}
+.contact-form textarea{resize:vertical;min-height:120px}
+.contact-form .btn{justify-self:center;margin-top:4px}
+.contact-form .honeypot{position:absolute!important;left:-9999px;width:1px;height:1px;opacity:0}
+.form-note{margin:16px auto 0;font-size:13px;color:var(--muted)}
+.form-status{border-radius:14px;padding:18px 20px;font-size:15px;margin:6px auto 0;max-width:540px;text-align:left}
+.form-status.ok{border:1px solid #b5e0c3;background:#eefaf1;color:#1c6b38}
+.form-status.err{border:1px solid #f0c5c5;background:#fdf0f0;color:#9c3131}
 /* ---- footer ---- */
 .footer{background:#071a43;color:#c4d1e8;padding:50px 0 24px}.footer-top{display:flex;justify-content:space-between;gap:30px;padding-bottom:34px;border-bottom:1px solid rgba(255,255,255,.15)}.footer-brand{color:white}.footer-brand p{max-width:300px;font-size:13px;color:#aabbd9}.footer-links{display:flex;gap:50px}.footer-col{display:grid;align-content:start;gap:10px;font-size:13px}.footer-col strong{color:#fff;margin-bottom:4px}.footer-col a:hover{color:#fff}.footer-bottom{display:flex;justify-content:space-between;gap:15px;padding-top:20px;font-size:11px;color:#93a8cb}
 /* ---- PAGINE APP: hero specifico ---- */

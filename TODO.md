@@ -49,11 +49,13 @@ Regole di lavoro (per l'omologo):
     (5 s creazione tag in Windows) e riempire gli slot video delle
     schede app. Estendere il bottone "Demo" SOLO alle card che
     avranno davvero un contenuto
-[ ] Email definitiva di contatto: in privacy.html e index.html si usa
-    info@snapost.it (provvisoria): da confermare/aggiornare quando
-    l'utente prendera' il dominio. Stesso indirizzo andrà nel Play Store
-[ ] Sezione contatti affidabile: sostituire il mailto con un form
-    o servizio esterno
+[x] 29/09 sera Email definitiva: info@snapost.it (casella Aruba attiva e
+    testata). Usata nel form contatti e in privacy.html; stesso indirizzo
+    andra' nel Play Store
+[~] 29/09 sera Sezione contatti: vero form (nome, email, messaggio),
+    stile sito, honeypot antispam, invio senza ricaricare la pagina tramite
+    Formspree (free, 50 invii/mese). Endpoint inserito; resta da pubblicare
+    e testare un invio reale sulla casella info@snapost.it
 [x] 27/09 sera Pubblicazione GitHub Pages ATTIVA: sito online su
     https://longhinandrea.github.io/SNAPOSTWEB/ (repo reso pubblico,
     branch main / root). Verificate online tutte e 4 le pagine:
