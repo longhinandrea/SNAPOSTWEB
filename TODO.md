@@ -80,8 +80,14 @@ Regole di lavoro (per l'omologo):
     Aruba (postmaster@ gia' esistente, tecnica, non toccare).
     Webmail: webmail.aruba.it. MX erano gia' attivi. Da testare
     invio+ricezione con email di prova
-[ ] Link reali: Play Store e installer Windows quando disponibili
-    (oggi le card download puntano alle schede app)
+[~] Link reali: installer Windows ATTIVO (30/09 notte): download/
+    Snapost_Setup_0.9.0.exe (49MB, build Inno Setup testata su PC
+    vergine) nel repo, link diretto + attributo download da card
+    home e sezione Scarica di windows.html, con nota SmartScreen
+    (exe non firmato: Informazioni -> Esegui comunque). A ogni nuova
+    versione: buildInstaller -> copiare l'exe in download/ (tenendo
+    SOLO l'ultima versione) -> aggiornare il nome file nei 2 link.
+    Resta il link Play Store (dopo pubblicazione Android)
 
 ## APPUNTI TECNICI
 - Palette: navy #082a78 / blue #1648b8 / azure #1f7dff, grigi e azzurro
