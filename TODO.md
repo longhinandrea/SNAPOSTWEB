@@ -43,9 +43,11 @@ Regole di lavoro (per l'omologo):
     le pagine. Da rileggere dall'utente prima del Play Store
 
 ## DA FARE
-[~] Screenshot reali: Windows (7 schermate: posta in arrivo, dettaglio,
-    tag, creazione tag/galleria icone, storico, trasferimenti e nota in
-    Esplora file). Restano gli screenshot Android (9:17)
+[x] 01/10 sera Screenshot reali Android INSERITI (5 su 6 slot): hero main
+    page + galleria (scatto, overlay tag, galleria app, copia in galleria
+    telefono, impostazioni). Manca solo "Benvenuto/QR": segnaposto attivo.
+    Aggiunta regola CSS .shot.phone img (aspect 9/19, cover). Qualita'
+    provvisoria accettata dall'utente: da rifare con calma
 [ ] Video dimostrativi: sostituire il dialog demo con video reale
     (5 s creazione tag in Windows) e riempire gli slot video delle
     schede app. Estendere il bottone "Demo" SOLO alle card che
