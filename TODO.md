@@ -43,11 +43,12 @@ Regole di lavoro (per l'omologo):
     le pagine. Da rileggere dall'utente prima del Play Store
 
 ## DA FARE
-[x] 01/10 sera Screenshot reali Android INSERITI (5 su 6 slot): hero main
-    page + galleria (scatto, overlay tag, galleria app, copia in galleria
-    telefono, impostazioni). Manca solo "Benvenuto/QR": segnaposto attivo.
-    Aggiunta regola CSS .shot.phone img (aspect 9/19, cover). Qualita'
-    provvisoria accettata dall'utente: da rifare con calma
+[x] 03/10 Screenshot Android COMPLETI (6 su 6): hero nuovo (android-main,
+    cane su prato con tag Sport), vecchio hero in card "scatto"
+    (android-scatto), galleria aggiornata, onboarding primo abbinamento
+    (android-benvenuto). Video Windows incorporato in windows.html
+    (YouTube non in elenco, youtu.be/3OFZWo-BsP4). SEO: sitemap.xml +
+    robots.txt. Qualita' provvisoria: da rifare con calma
 [ ] Video dimostrativi: sostituire il dialog demo con video reale
     (5 s creazione tag in Windows) e riempire gli slot video delle
     schede app. Estendere il bottone "Demo" SOLO alle card che
