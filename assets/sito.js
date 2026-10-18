@@ -19,6 +19,37 @@ if(contactForm){contactForm.addEventListener('submit',async event=>{
   }
 })}
 
+// SnapostPRO: modal di accesso all'area test (usato dalla index).
+// Le funzioni di verifica stanno in pro-gate.js, caricato prima.
+if(typeof proAutorizzato==='function'){
+  const proModal=document.getElementById('proModal');
+  if(proModal){
+    const apriPro=function(e){
+      if(e)e.preventDefault();
+      if(proAutorizzato()){location.href='pro/index.html';return}
+      const err=proModal.querySelector('.pro-err');err.hidden=true;
+      proModal.showModal();
+      const inp=proModal.querySelector('input');if(inp)setTimeout(function(){inp.focus()},80);
+    };
+    document.querySelectorAll('[data-pro-open]').forEach(function(el){el.addEventListener('click',apriPro)});
+    if(new URLSearchParams(location.search).get('pro')==='1')apriPro();
+    const proForm=proModal.querySelector('.pro-modal-form');
+    if(proForm)proForm.addEventListener('submit',function(e){
+      e.preventDefault();
+      const inp=proForm.querySelector('input');
+      const err=proModal.querySelector('.pro-err');
+      const val=(inp.value||'').trim();
+      if(val===PRO_PASSWORD){
+        proConferma();proModal.close();location.href='pro/index.html';
+      }else{
+        err.textContent='Password non valida. Verifica maiuscole e minuscole.';
+        err.hidden=false;inp.select();
+      }
+    });
+    proModal.querySelectorAll('[data-pro-close]').forEach(function(b){b.addEventListener('click',function(){proModal.close()})});
+  }
+}
+
 // Su telefono/tablet il file .exe non si puo' installare: invece di far
 // scaricare un file inutile, spiego e porto l'utente sull'app giusta.
 if(/Android|iPhone|iPad|iPod|Mobi/i.test(navigator.userAgent)){

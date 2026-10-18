@@ -1,0 +1,68 @@
+/* ============================================================
+   TEMA SNAPOSTPRO — oro/ambra (da snaposticona_gold.png)
+   Le pagine PRO portano <body class="pro"> e sovrascrivono le
+   variabili del tema blu: layout e componenti restano identici.
+   Su index.html (senza body.pro) questo file fornisce solo
+   pill nav, banner hero e modal di accesso all'area test.
+   ============================================================ */
+body.pro{--navy:#7c3a00;--blue:#c25300;--azure:#e07818;--ink:#241503;--muted:#71604e;--pale:#fdf3e7;--line:#f0ddc2;--accent:#e8a54b;--shadow:0 24px 70px rgba(122,72,10,.13)}
+body.pro .btn.windows{background:linear-gradient(135deg,#e8890f,#c25300);box-shadow:0 12px 26px rgba(194,83,0,.28)}
+body.pro .btn.windows:hover{background:linear-gradient(135deg,#f79a24,#d55e06);box-shadow:0 16px 32px rgba(194,83,0,.38)}
+body.pro .nav-cta,body.pro .btn.primary{background:#c25300}
+body.pro .nav-cta:hover,body.pro .btn.primary:hover{background:#9c4200;box-shadow:0 12px 26px rgba(194,83,0,.25)}
+body.pro .business{background:linear-gradient(120deg,#33190a 0%,#7a3500 58%,#a94d00 100%)}
+body.pro .business .btn.primary{color:#7a3500}
+body.pro .step:not(:last-child):after{background:#fdf3e7;color:#c25300}
+body.pro .hero:before{border-color:rgba(232,137,15,.14)}
+body.pro .app-badge{background:#fdf3e7;border-color:#f0ddc2;color:#a94d00}
+body.pro .check{background:#fdf3e7;color:#c25300}
+body.pro .tree-head .snap-badge{color:#c25300;background:#fdf3e7;border-color:#f0ddc2}
+body.pro .tree-row.sel{background:#fdf3e7;box-shadow:inset 2px 0 0 #c25300}
+body.pro .shot .ph{border-color:#e5c695;color:#a9681f;background:linear-gradient(145deg,#fdf6ec,#f9ead2)}
+body.pro .video-slot .ph{background:linear-gradient(145deg,#7a3500,#a94d00);border-color:rgba(255,255,255,.35)}
+body.pro .faq-item summary:after{color:#c25300}
+body.pro .footer{background:#2a1404;color:#e8d9c4}
+body.pro .footer-brand p{color:#c4ad92}
+body.pro .footer-bottom{color:#a98d6c}
+body.pro .final-box{background:linear-gradient(125deg,#fdf3e7,#fffaf2);border-color:#f0ddc2}
+body.pro .contact-form input:focus,body.pro .contact-form textarea:focus{border-color:#e07818;box-shadow:0 0 0 3px rgba(224,120,24,.14)}
+body.pro .contact-mail-inline{color:#7c3a00;text-decoration-color:#e07818}
+body.pro .legal-body a,body.pro .more-link{color:#c25300}
+
+/* ---- pill nav "SnapostPRO" su index (voce in evidenza) ---- */
+.pro-pill{display:inline-flex;align-items:center;gap:7px;background:linear-gradient(135deg,#fdf3e7,#fbe9d2);border:1.5px solid #e0a24c;color:#9c4200;font-weight:800;font-size:13px;letter-spacing:.01em;padding:8px 15px;border-radius:999px;transition:transform .2s,box-shadow .2s,background .2s;white-space:nowrap}
+.pro-pill:hover{transform:translateY(-2px);box-shadow:0 10px 22px rgba(194,83,0,.18);background:linear-gradient(135deg,#fbe9d2,#f8ddba)}
+.pro-pill .pro-star{font-size:11px;transform:rotate(-8deg)}
+
+/* ---- banner nella hero di index ---- */
+.pro-banner{display:flex;align-items:center;gap:11px;margin-top:18px;padding:11px 16px;border:1.5px solid #e8b672;border-radius:14px;background:linear-gradient(135deg,#fdf6ec,#fbead2);color:#7c3a00;font-size:14px;transition:transform .2s,box-shadow .2s;max-width:520px}
+.pro-banner:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(194,83,0,.14)}
+.pro-banner .pro-banner-badge{flex:none;background:linear-gradient(135deg,#e8890f,#c25300);color:#fff;font-weight:900;font-size:11px;letter-spacing:.1em;padding:5px 9px;border-radius:8px}
+.pro-banner strong{color:#9c4200}
+.pro-banner .pro-arrow{margin-left:auto;font-weight:800;color:#c25300}
+
+/* ---- modal di accesso all'area test ---- */
+dialog.pro-modal{border:0;padding:0;background:transparent;max-width:440px;width:calc(100% - 40px)}
+dialog.pro-modal::backdrop{background:rgba(20,12,4,.55);backdrop-filter:blur(4px)}
+.pro-modal-card{position:relative;background:#fff;border:1px solid #f0ddc2;border-radius:24px;padding:34px 30px 30px;box-shadow:0 30px 80px rgba(60,30,0,.35);text-align:center}
+.pro-modal-logo{width:64px;height:64px;object-fit:contain;margin-bottom:10px}
+.pro-modal-card .eyebrow{justify-content:center;color:#c25300}
+.pro-modal-card h2{font-size:26px;letter-spacing:-.04em;margin:10px 0 10px;color:#241503}
+.pro-modal-card p{color:#71604e;font-size:14.5px;margin:0 0 12px}
+.pro-modal-card .pro-ask{font-size:13px}
+.pro-modal-card .pro-ask a{color:#c25300;font-weight:750;text-decoration:underline;text-underline-offset:3px}
+.pro-modal-form{display:grid;gap:10px;margin-top:16px}
+.pro-modal-form input{width:100%;border:1.5px solid #e0c9a4;border-radius:12px;padding:13px 15px;font:inherit;font-size:15px;color:#241503;text-align:center;letter-spacing:.04em;background:#fffdf9;transition:border-color .2s,box-shadow .2s}
+.pro-modal-form input:focus{outline:none;border-color:#e07818;box-shadow:0 0 0 3px rgba(224,120,24,.15)}
+.pro-modal-form .btn{width:100%;background:linear-gradient(135deg,#e8890f,#c25300);color:#fff;border:0;border-radius:12px;font-weight:800;padding:13px;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.pro-modal-form .btn:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(194,83,0,.3)}
+.pro-err{color:#b3261e!important;font-weight:700;font-size:13.5px!important;margin:4px 0 0!important}
+.pro-close-x{position:absolute;top:12px;right:14px;border:0;background:transparent;font-size:26px;line-height:1;color:#a8916f;cursor:pointer;padding:4px 8px;border-radius:8px}
+.pro-close-x:hover{color:#7c3a00;background:#fdf3e7}
+.pro-modal-note{margin-top:14px;font-size:12px!important;color:#a08d74!important}
+
+@media(max-width:650px){
+  .pro-pill{font-size:12px;padding:7px 12px}
+  .pro-banner{font-size:13px;padding:10px 13px}
+  .pro-modal-card{padding:28px 20px 24px}
+}
