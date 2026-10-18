@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#fff7ec">
+<meta name="description" content="Guida passo passo: installare SnapostPRO su più PC con un repository condiviso in rete.">
+<title>SnapostPRO in rete — Guida passo passo</title>
+<link rel="icon" href="../assets/snaposticona_gold.png">
+<link rel="stylesheet" href="../assets/stile.css">
+<link rel="stylesheet" href="../assets/stile-pro.css">
+</head>
+<body class="pro">
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="SnapostPRO home"><img src="../assets/snaposticona_gold.png" alt=""><span>Snapost<span style="color:#c25300">PRO</span></span></a>
+    <nav class="navlinks" id="navlinks" aria-label="Navigazione principale">
+      <a href="index.html">Home PRO</a><a href="index.html#funziona">Come funziona</a><a href="windows.html">App Windows</a><a href="android.html">App Android</a><a href="index.html#faq">FAQ</a>
+    </nav>
+    <a class="nav-cta btn windows" href="windows.html#download">Scarica <span aria-hidden="true">↓</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Apri menu" aria-expanded="false">☰</button>
+  </div>
+</header>
+<main>
+<section class="page-hero">
+  <div class="container page-hero-grid">
+    <div class="reveal">
+      <span class="app-badge">Guida · Repository in rete</span>
+      <h1>Un repository,<br>tutti i PC.</h1>
+      <p>Il repository SnapostPRO può stare su un solo PC (o su un NAS) e servire tutto il team: anagrafiche condivise, foto consegnate nello stesso documentale, zero duplicazioni.</p>
+      <p>La procedura è pensata per essere seguita dall'inizio alla fine: circa <strong>15 minuti</strong>, una sola volta. Serve solo che i PC siano sulla stessa rete (Wi-Fi o cavo) e che chi opera abbia un minimo di dimestichezza con Windows.</p>
+      <div class="cta-row">
+        <a class="btn windows" href="windows.html#download">Scarica SnapostPRO <span aria-hidden="true">↓</span></a>
+        <a class="btn secondary" href="#problemi">Se qualcosa non va</a>
+      </div>
+    </div>
+    <div class="reveal">
+      <figure class="shot desktop reveal" style="margin:0"><div class="ph">Schema di rete<br>immagine in arrivo</div><figcaption>Il PC principale condivide la cartella; gli altri PC si collegano.</figcaption></figure>
+    </div>
+  </div>
+</section>
+<section class="section steps-section" id="passi">
+  <div class="container">
+    <div class="section-head reveal"><div class="eyebrow">La procedura</div><h2>Quattro passi, in quest'ordine.</h2><p>Il PC che crea il repository diventa il "PC principale". Gli altri si collegano a lui: non serve installare nulla due volte né copiare file a mano.</p></div>
+    <div class="steps">
+      <article class="step reveal"><h3>1 · Il PC principale crea il repository</h3><p>Installa SnapostPRO e al primo avvio scegli <strong>«Sto creando un nuovo repository»</strong>. Indica una cartella del suo disco (es. <code>C:\SNPREPO</code>) — meglio se non è dentro Documenti o Desktop sincronizzati col cloud.</p></article>
+      <article class="step reveal"><h3>2 · Il wizard condivide la cartella</h3><p>Lascia spuntato <strong>«Condividi questa cartella in rete»</strong> e conferma la richiesta di Windows (UAC). Il wizard crea da solo la condivisione e un utente di rete dedicato, poi mostra le <strong>credenziali di accesso</strong>: percorso (es. <code>\\NOMEPCSERVER\SNPREPO</code>), nome utente e password. <strong>Segnale su un foglio o inviale ai colleghi</strong>: servono al passo 3.</p></article>
+      <article class="step reveal"><h3>3 · Gli altri PC si collegano</h3><p>Su ogni altro PC: installa SnapostPRO e al primo avvio scegli <strong>«Voglio unirmi a un repository esistente»</strong>. Scrivi il percorso ricevuto (o solo il nome del PC principale e premi «Cerca repository»). Quando Windows chiede l'accesso, la finestra di SnapostPRO raccoglie le credenziali: <strong>si digitano una volta sola per PC</strong>, dopo Windows le ricorda per sempre.</p></article>
+      <article class="step reveal"><h3>4 · Verifica e si lavora</h3><p>Da ogni PC apri le anagrafiche: devi vedere gli stessi progetti, settori e sezioni (è lo stesso archivio, condiviso). Fai una consegna di prova da un PC e controllala dall'altro. I telefoni si abbinano con il QR come al solito, al PC che preferisci.</p></article>
+    </div>
+  </div>
+</section>
+<section class="section" id="note">
+  <div class="container">
+    <div class="section-head reveal"><div class="eyebrow">Buono a sapersi</div><h2>Dettagli che evitano dubbi.</h2></div>
+    <div class="feature-grid">
+      <article class="feature-card reveal"><div class="feature-icon">◉</div><h3>Credenziali sempre ritrovabili</h3><p>L'admin le rivede quando vuole: nell'app, in Impostazioni → <strong>Accesso di rete al repository</strong> (visibile solo a lui), con il bottone «Copia tutto» pronto da incollare in chat ai colleghi.</p></article>
+      <article class="feature-card reveal"><div class="feature-icon">↻</div><h3>Cambiare la password</h3><p>Dalla stessa finestra l'admin può rigenerarla: i PC già collegati la ridigitano una volta (la loro app la richiede da sola). Utile se qualcuno lascia il team.</p></article>
+      <article class="feature-card reveal"><div class="feature-icon">◔</div><h3>Niente password quotidiane</h3><p>Dopo il primo aggancio, ogni giorno: accendi il PC, apri l'app, funziona. Le credenziali servono solo quando un PC nuovo si collega o dopo un cambio password.</p></article>
+      <article class="feature-card reveal"><div class="feature-icon">▤</div><h3>E il NAS?</h3><p>Il repository può stare anche su un NAS: dal wizard scegli la cartella di rete invece di una locale. In quel caso le credenziali sono quelle del NAS, e la procedura per i PC è identica.</p></article>
+    </div>
+  </div>
+</section>
+<section class="section faq" id="problemi">
+  <div class="container"><div class="section-head reveal"><div class="eyebrow">Se qualcosa non va</div><h2>I casi più comuni.</h2></div>
+    <div class="faq-list">
+      <details class="faq-item reveal"><summary>«Percorso non raggiungibile» quando scrivo \\NOMEPC\SNPREPO</summary><p>Quasi sempre è una di queste: il PC principale è spento o su un'altra rete; il nome del PC è sbagliato (controllalo sul PC principale: Impostazioni → Sistema → Informazioni); oppure mancano le credenziali. Prova anche con l'indirizzo IP del PC principale al posto del nome (lo trovi con <code>ipconfig</code> nel prompt dei comandi).</p></details>
+      <details class="faq-item reveal"><summary>Chiede nome utente e password: quali?</summary><p>Quelle generate dal wizard sul PC principale e mostrate a fine creazione (utente di rete dedicato + password). Se l'admin non le ritrova, sono in Impostazioni → Accesso di rete al repository. Servono una volta per PC.</p></details>
+      <details class="faq-item reveal"><summary>Il PC si collega ma non vede i progetti</summary><p>Il repository è vuoto o il percorso punta a una cartella diversa da quella condivisa. Controlla che il percorso finisca sulla cartella indicata dal wizard (la condivisione si chiama SNPREPO se creata dal wizard).</p></details>
+      <details class="faq-item reveal"><summary>«Qui non c'è nessun repository Snapost PRO»</summary><p>Il percorso raggiunge una cartella normale, non il repository. Serve la cartella condivisa dal wizard, quella del messaggio di fine installazione del PC principale.</p></details>
+      <details class="faq-item reveal"><summary>Funziona lentamente</summary><p>Il repository in rete va alla velocità della rete: su Wi-Fi di casa va bene per l'uso normale; con molti file pesanti conviene collegare i PC via cavo o portare il repository su un NAS.</p></details>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="footer"><div class="container"><div class="footer-top"><div><a class="brand footer-brand" href="index.html"><img src="../assets/snaposticona_gold.png" alt=""><span>Snapost<span style="color:#e8a54b">PRO</span></span></a><p>Shoot. Send. Sorted.<br>Il repository, nel posto giusto.</p></div><div class="footer-links"><div class="footer-col"><strong>Guida</strong><a href="#passi">La procedura</a><a href="#note">Buono a sapersi</a><a href="#problemi">Se qualcosa non va</a></div><div class="footer-col"><strong>Le app</strong><a href="windows.html">SnapostPRO per Windows</a><a href="android.html">SnapostPRO per Android</a></div><div class="footer-col"><strong>Famiglia Snapost</strong><a href="../index.html">← Torna a Snapost</a><a href="../privacy.html">Privacy</a></div></div></div><div class="footer-bottom"><span>© 2026 Snapost · Software by L.A. VE</span><span>Shoot. Send. Sorted.</span></div></div></footer>
+<script src="../assets/pro-gate.js"></script>
+<script src="../assets/sito.js"></script>
+</body>
+</html>
