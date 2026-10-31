@@ -65,6 +65,31 @@
     </div>
   </div>
 </section>
+<section class="section steps-section" id="spostare">
+  <div class="container">
+    <div class="section-head reveal"><div class="eyebrow">Operazioni avanzate</div><h2>Spostare il repository.</h2><p>Il repository vive in un solo posto: un <strong>NAS</strong> oppure il PC del superadmin di turno. Due situazioni portano a spostarlo: un cambio di PC (o passaggio al NAS), oppure il cambio di superadmin — quando chi ha creato il repository lascia il team.</p></div>
+    <div class="steps">
+      <article class="step reveal">
+        <h3>Caso 1 · Spostamento, stesso amministratore</h3>
+        <p>Cambio di PC o passaggio al NAS, nessun cambio di ruoli. <strong>La copia è l'unico passo manuale</strong>: tutto il resto lo fa l'app.</p>
+        <p>1 · Chiudi l'app su tutti i PC (niente consegne in corso).<br>
+           2 · Copia l'<strong>intera cartella</strong> del repository nella nuova destinazione, con dentro la sottocartella <code>_snapost</code> (è il "cervello": database, credenziali, cestino). Verifica che ci sia dopo la copia.<br>
+           3 · Sul nuovo host apri l'app e, in Impostazioni → <strong>«Avvia wizard per nuovo aggancio repository»</strong>, scegli <strong>«Crea un nuovo repository»</strong> puntando alla cartella copiata. L'app riconosce il repository esistente, ricrea condivisione e permessi e <strong>non tocca i dati</strong>. Su un NAS: crea la condivisione dal pannello del NAS, poi scegli «Unisciti».<br>
+           4 · Spegni il vecchio: rimuovi la condivisione (o rinomina la cartella) sul PC precedente. Gli altri PC, al primo avvio, vedranno «repository non raggiungibile»: rispondono «Sì», scelgono «Unisciti» e puntano al nuovo host. Credenziali invariate.</p>
+        <p>I telefoni non richiedono nulla: sono abbinati al PC, non alla posizione del repository.</p>
+      </article>
+      <article class="step reveal">
+        <h3>Caso 2 · Successione: cambio di superadmin</h3>
+        <p>Il creatore lascia il team (pensione, dimissioni, cambio PC). Un solo Click per il ruolo, poi lo spostamento come nel Caso 1.</p>
+        <p>1 · <strong>Trasferisci il ruolo</strong>: sul pannello Utenti, il creatore seleziona il successore e preme il bottone rosso <strong>«Passa i privilegi di superadmin»</strong>. Il ruolo viaggia nel database, dentro il repository: va fatto prima della copia.<br>
+           2 · Copia l'intera cartella (con <code>_snapost</code>) sul PC del nuovo superadmin o sul NAS.<br>
+           3 · Il <strong>nuovo superadmin</strong> apre il wizard da Impostazioni → «Avvia wizard per nuovo aggancio repository» e clicca <strong>«Crea un nuovo repository»</strong> puntando alla copia — <strong>non «Unisciti»</strong>, che non creerebbe la condivisione. L'app riconosce i dati esistenti e li mantiene.<br>
+           4 · <strong>Spegni il vecchio repository</strong> (rimuovi la condivisione o elimina/rinomina la cartella): se restasse attivo, i PC continuerebbero a collegarsi al vecchio e i due archivi diverrebbero.</p>
+        <p>Dopo la successione, il potere di eliminare cartelle e radice <strong>segue il nuovo superadmin</strong>: lo esercita dal suo PC (o dal pannello del NAS), non più via rete. Per questo la regola d'oro è: <strong>il repository sta sempre su un NAS o sul PC del superadmin di turno</strong>.</p>
+      </article>
+    </div>
+  </div>
+</section>
 <section class="section faq" id="problemi">
   <div class="container"><div class="section-head reveal"><div class="eyebrow">Se qualcosa non va</div><h2>I casi più comuni.</h2></div>
     <div class="faq-list">
@@ -77,7 +102,7 @@
   </div>
 </section>
 </main>
-<footer class="footer"><div class="container"><div class="footer-top"><div><a class="brand footer-brand" href="index.html"><img src="../assets/snaposticona_gold.png" alt=""><span>Snapost<span style="color:#e8a54b">PRO</span></span></a><p>Shoot. Send. Sorted.<br>Il repository, nel posto giusto.</p></div><div class="footer-links"><div class="footer-col"><strong>Guida</strong><a href="#passi">La procedura</a><a href="#note">Buono a sapersi</a><a href="#problemi">Se qualcosa non va</a></div><div class="footer-col"><strong>Le app</strong><a href="windows.html">SnapostPRO per Windows</a><a href="android.html">SnapostPRO per Android</a></div><div class="footer-col"><strong>Famiglia Snapost</strong><a href="../index.html">← Torna a Snapost</a><a href="../privacy.html">Privacy</a></div></div></div><div class="footer-bottom"><span>© 2026 Snapost · Software by L.A. VE</span><span>Shoot. Send. Sorted.</span></div></div></footer>
+<footer class="footer"><div class="container"><div class="footer-top"><div><a class="brand footer-brand" href="index.html"><img src="../assets/snaposticona_gold.png" alt=""><span>Snapost<span style="color:#e8a54b">PRO</span></span></a><p>Shoot. Send. Sorted.<br>Il repository, nel posto giusto.</p></div><div class="footer-links"><div class="footer-col"><strong>Guida</strong><a href="#passi">La procedura</a><a href="#spostare">Spostare il repository</a><a href="#note">Buono a sapersi</a><a href="#problemi">Se qualcosa non va</a></div><div class="footer-col"><strong>Le app</strong><a href="windows.html">SnapostPRO per Windows</a><a href="android.html">SnapostPRO per Android</a></div><div class="footer-col"><strong>Famiglia Snapost</strong><a href="../index.html">← Torna a Snapost</a><a href="../privacy.html">Privacy</a></div></div></div><div class="footer-bottom"><span>© 2026 Snapost · Software by L.A. VE</span><span>Shoot. Send. Sorted.</span></div></div></footer>
 <script src="../assets/pro-gate.js"></script>
 <script src="../assets/sito.js"></script>
 </body>
