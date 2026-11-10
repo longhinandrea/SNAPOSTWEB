@@ -53,18 +53,19 @@ if(typeof proAutorizzato==='function'){
 // Su telefono/tablet il file .exe non si puo' installare: invece di far
 // scaricare un file inutile, spiego e porto l'utente sull'app giusta.
 if(/Android|iPhone|iPad|iPod|Mobi/i.test(navigator.userAgent)){
-  // 1) pulsanti che puntano al .exe: sostituiti da una nota inline
+  const englishPage=document.documentElement.lang==='en';
   document.querySelectorAll('a[href$=".exe"]').forEach(function(a){
     var note=document.createElement('p');
     note.className='mobile-note';
-    note.innerHTML='<strong>Snapost per Windows si scarica da un PC.</strong> Apri www.snapost.it dal computer, oppure installa l\'app Android da Google Play quando sara\' disponibile.';
+    note.innerHTML=englishPage?'<strong>Snapost for Windows must be downloaded on a PC.</strong> Open <a href="https://www.snapost.it/en.html">snapost.it</a> on your computer, or <a href="https://play.google.com/store/apps/details?id=com.snapost.app">get the Android app on Google Play</a>.':'<strong>Snapost per Windows si scarica da un PC.</strong> Apri <a href="https://www.snapost.it/">snapost.it</a> dal computer, oppure <a href="https://play.google.com/store/apps/details?id=com.snapost.app">installa l’app Android da Google Play</a>.';
     a.replaceWith(note);
   });
-  // 2) pulsante nella barra di navigazione: diventa "App Android"
-  //    (nascosto se si e' gia' nella pagina Android)
   document.querySelectorAll('.nav-cta').forEach(function(a){
     if(/android\.html/.test(location.pathname)){
       a.style.display='none';
+    }else if(englishPage){
+      a.textContent='Get the Android app';
+      a.setAttribute('href','https://play.google.com/store/apps/details?id=com.snapost.app');
     }else{
       a.textContent='L\'app Android';
       a.setAttribute('href','android.html');
