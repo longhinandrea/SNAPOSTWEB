@@ -83,14 +83,12 @@ Regole di lavoro (per l'omologo):
     Aruba (postmaster@ gia' esistente, tecnica, non toccare).
     Webmail: webmail.aruba.it. MX erano gia' attivi. Da testare
     invio+ricezione con email di prova
-[~] Link reali: installer Windows ATTIVO (01/10): download/
-    Snapost_Setup_0.9.1.exe (49MB; build con fix toast consegna, doppio
-    caricamento gallery e installazione-standard.json incluso) nel repo,
-    link diretto + attributo download da card home e sezione Scarica di
-    windows.html, con nota SmartScreen (exe non firmato: Informazioni ->
-    Esegui comunque). A ogni nuova versione: build_installer.bat ->
-    copiare l'exe in download/ (tenendo SOLO l'ultima versione) ->
-    aggiornare il nome file nei 2 link.
+[~] Link reali: installer Windows ATTIVO (10/11): download/
+    Snapost_Setup_1.0.1.0.exe (49MB; release 1.0.1) nel repo, link diretto
+    + attributo download da card home e sezione Scarica di windows.html,
+    con nota SmartScreen (exe non firmato: Informazioni -> Esegui comunque).
+    A ogni nuova versione: build_installer.bat -> copiare l'exe in download/
+    (tenendo SOLO l'ultima versione) -> aggiornare il nome file nei 2 link.
     Resta il link Play Store (dopo pubblicazione Android)
 
 ## APPUNTI TECNICI
