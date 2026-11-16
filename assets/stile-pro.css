@@ -29,6 +29,10 @@ body.pro .contact-form input:focus,body.pro .contact-form textarea:focus{border-
 body.pro .contact-mail-inline{color:#7c3a00;text-decoration-color:#e07818}
 body.pro .legal-body a,body.pro .more-link{color:#c25300}
 
+.navlinks .snapost-return{display:inline-flex;align-items:center;gap:8px;padding:6px 12px;border:1px solid #c8d7f3;border-radius:999px;background:#f4f7ff;color:#153b83;font-size:13px;font-weight:750;white-space:nowrap;transition:background .2s,box-shadow .2s,transform .2s}
+.navlinks .snapost-return img{width:24px;height:24px;object-fit:cover;border-radius:6px}
+.navlinks .snapost-return:hover{color:#0c2d6d;background:#e9efff;box-shadow:0 5px 14px rgba(21,59,131,.14);transform:translateY(-1px)}
+
 /* ---- pill nav "SnapostPRO" su index (voce in evidenza) ---- */
 .pro-pill{display:inline-flex;align-items:center;gap:7px;background:linear-gradient(135deg,#fdf3e7,#fbe9d2);border:1.5px solid #e0a24c;color:#9c4200;font-weight:800;font-size:13px;letter-spacing:.01em;padding:8px 15px;border-radius:999px;transition:transform .2s,box-shadow .2s,background .2s;white-space:nowrap}
 .pro-pill:hover{transform:translateY(-2px);box-shadow:0 10px 22px rgba(194,83,0,.18);background:linear-gradient(135deg,#fbe9d2,#f8ddba)}
