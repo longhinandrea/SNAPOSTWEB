@@ -29,6 +29,15 @@ body.pro .contact-form input:focus,body.pro .contact-form textarea:focus{border-
 body.pro .contact-mail-inline{color:#7c3a00;text-decoration-color:#e07818}
 body.pro .legal-body a,body.pro .more-link{color:#c25300}
 
+.demo-grid{display:grid;grid-template-columns:1.1fr .7fr;align-items:center;gap:48px;max-width:980px;margin:auto}
+.demo-copy h2{font-size:clamp(32px,4vw,48px);line-height:1.08;letter-spacing:-.045em;margin:15px 0;color:#241503}
+.demo-copy p{max-width:560px;color:#71604e;font-size:16px}
+.demo-copy .btn{margin-top:12px}
+.demo-grid .video-slot.vertical{max-width:340px}
+.demo-video-note{margin:10px 0 0;text-align:center;color:#71604e;font-size:12px}
+@media(max-width:900px){.demo-grid{grid-template-columns:1fr;gap:28px}.demo-copy{text-align:center}.demo-copy .eyebrow{justify-content:center}.demo-copy p{margin-left:auto;margin-right:auto}}
+@media(max-width:650px){.demo-grid .video-slot.vertical{max-width:320px}.demo-copy .btn{width:100%}}
+
 .navlinks .snapost-return{display:inline-flex;align-items:center;gap:8px;padding:6px 12px;border:1px solid #c8d7f3;border-radius:999px;background:#f4f7ff;color:#153b83;font-size:13px;font-weight:750;white-space:nowrap;transition:background .2s,box-shadow .2s,transform .2s}
 .navlinks .snapost-return img{width:24px;height:24px;object-fit:cover;border-radius:6px}
 .navlinks .snapost-return:hover{color:#0c2d6d;background:#e9efff;box-shadow:0 5px 14px rgba(21,59,131,.14);transform:translateY(-1px)}

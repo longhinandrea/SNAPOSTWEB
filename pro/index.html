@@ -19,7 +19,7 @@
   <div class="container nav">
     <a class="brand" href="index.html" aria-label="SnapostPRO home"><img src="../assets/snaposticona_gold.png" alt=""><span>Snapost<span style="color:#c25300">PRO</span></span></a>
     <nav class="navlinks" id="navlinks" aria-label="Navigazione principale">
-      <a class="snapost-return" href="../index.html" title="Torna a Snapost"><img src="../assets/snaposticona.png" alt=""><span>Torna a Snapost</span></a><a href="#funziona">Come funziona</a><a href="#repository">Il repository</a><a href="guida.html">Guida in rete</a><a href="windows.html">App Windows</a><a href="android.html">App Android</a><a href="#faq">FAQ</a>
+      <a class="snapost-return" href="../index.html" title="Torna a Snapost"><img src="../assets/snaposticona.png" alt=""><span>Torna a Snapost</span></a><a href="#video">Video</a><a href="#funziona">Come funziona</a><a href="#repository">Il repository</a><a href="guida.html">Guida in rete</a><a href="windows.html">App Windows</a><a href="android.html">App Android</a><a href="#faq">FAQ</a>
     </nav>
     <a class="nav-cta btn windows" href="windows.html#download">Scarica SnapostPRO <span aria-hidden="true">↓</span></a>
     <button class="menu-toggle" id="menuToggle" aria-label="Apri menu" aria-expanded="false">☰</button>
@@ -34,7 +34,7 @@
       <p class="hero-copy">Scatti dal telefono, scegli progetto, settore e sezione: la foto arriva nel repository aziendale, già dentro la commessa. Un documentale vero, anche su rete o NAS.</p>
       <div class="hero-actions">
         <a class="btn windows" href="windows.html#download">Scarica SnapostPRO <span aria-hidden="true">↓</span></a>
-        <a class="btn secondary" href="#funziona">Come funziona</a>
+        <a class="btn secondary" href="#video">Guarda il video</a>
       </div>
       <div class="hero-note"><span class="check">✓</span> Area in test: accesso riservato agli autorizzati.</div>
     </div>
@@ -45,6 +45,38 @@
   </div>
 </section>
 <div class="proof"><div class="container proof-row"><div class="proof-item"><span class="proof-icon">⌂</span><span><strong>Tre livelli</strong>: Progetto → Settore → Sezione</span></div><div class="proof-item"><span class="proof-icon">▤</span><span>Esplora progetti <strong>dedicato</strong></span></div><div class="proof-item"><span class="proof-icon">⇄</span><span>Foto e documenti <strong>in entrambe le direzioni</strong></span></div><div class="proof-item"><span class="proof-icon">◉</span><span>Repository <strong>anche su rete e NAS</strong></span></div></div></div>
+<section class="section" id="video">
+  <div class="container demo-grid">
+    <div class="demo-copy reveal">
+      <div class="eyebrow">SnapostPRO in un minuto</div>
+      <h2>Dal cantiere alla cartella giusta.</h2>
+      <p>Guarda l’anteprima e scopri come le foto scattate in cantiere arrivano organizzate nel repository condiviso.</p>
+      <a class="btn windows" href="https://www.youtube.com/shorts/lCrAruhmApg" target="_blank" rel="noopener">Guarda il video completo su YouTube <span aria-hidden="true">↗</span></a>
+    </div>
+    <div class="reveal">
+      <div class="video-slot vertical">
+        <video id="snapostpro-preview" muted playsinline controls preload="none" poster="../assets/snapostpro-anteprima.jpg" aria-label="Anteprima di 10 secondi del video SnapostPRO">
+          <source src="../assets/video_snapostpro_anteprima.mp4" type="video/mp4">
+          Il browser non supporta la riproduzione video.
+        </video>
+        <p class="demo-video-note">Anteprima di 10 secondi senza audio. Il video completo è su YouTube.</p>
+        <script>
+          (() => {
+            const preview = document.getElementById('snapostpro-preview');
+            if (!preview || !('IntersectionObserver' in window)) return;
+            const observer = new IntersectionObserver(entries => {
+              if (entries.some(entry => entry.isIntersecting)) {
+                preview.play().catch(() => {});
+                observer.disconnect();
+              }
+            }, { threshold: 0.5 });
+            observer.observe(preview);
+          })();
+        </script>
+      </div>
+    </div>
+  </div>
+</section>
 <section class="section" id="funziona">
   <div class="container">
     <div class="section-head reveal"><div class="eyebrow">Pensato per il lavoro di squadra</div><h2>Il flusso di Snapost, la struttura della tua impresa.</h2><p>SnapostPRO porta l'invio dal telefono nel mondo professionale: le foto e i documenti finiscono organizzati per commessa, senza passaggi manuali.</p></div>
